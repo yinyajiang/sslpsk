@@ -1,0 +1,38 @@
+[project]
+name = "sslpsk-w"
+version = "1.0.0"
+description = "sslpsk fork"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+keywords = ["ssl", "tls", "psk", "tls-psk", "preshared key"]
+authors = [
+    { name = "abc", email = "abc@gmail.com" }
+]
+maintainers = [
+    { name = "abc", email = "abc@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/yinyajiang/sslpsk-w"
+"Bug Reports" = "https://github.com/yinyajiang/sslpsk-w/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["docs*", "tests*"]
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
